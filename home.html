@@ -1,0 +1,1153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Imran Nazir">
+    <link rel="icon" href="pic.png" type="image/png">
+    <title>MUQA Glass Works - Premium Glass & Aluminium Work | Gurugram Delhi Faridabad Sohna Manesar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta name="keywords"
+        content="muqa glass works,aluminium works,glass firm,led mirrors,ss railing,toughened glass,skylight,shower glass,repair and installation,premium glass and aluminium works, gurugram, delhi, faridabad, sohna, manesar">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif
+        }
+
+        body {
+            background: #0a0a0a;
+            color: #fff;
+            padding-bottom: 70px
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 15px;
+            background: #000;
+            position: sticky;
+            top: 0;
+            z-index: 99;
+            border-bottom: 1px solid #333
+        }
+
+        a,
+        a:visited,
+        a:hover,
+        a:active,
+        a:focus {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            /* aligns image with text */
+            gap: 10px;
+        }
+
+        .logo img {
+            width: 45px;
+            height: 45px;
+            object-fit: contain;
+            display: block;
+        }
+
+        .logo span {
+            color: #d4a017;
+            display: block;
+            font-size: 26px;
+            font-weight: 800;
+            letter-spacing: 1px
+        }
+
+        .logo small {
+            font-size: 11px;
+            letter-spacing: 3px;
+            color: #ccc
+        }
+
+        .btn-wa {
+            background: #02cd2ef4;
+            color: #000;
+            padding: 8px 16px;
+            border-radius: 10px;
+            font-weight: 700;
+            font-size: 14px;
+            text-decoration: none
+        }
+
+        .hero {
+            position: relative;
+            background: linear-gradient(90deg, rgba(0, 0, 0, 0.95) 45%, rgba(0, 0, 0, 0.3)), url('C:/Users/imran nazir/.gemini/antigravity-ide/scratch/Muqa Glass Works/assets/background.png') center/cover;
+            padding: 25px 15px 20px
+        }
+
+        .hero h1 {
+            font-size: 29px;
+            line-height: 1.1;
+            margin-bottom: 10px
+        }
+
+        .hero .gold {
+            color: #d4a017
+        }
+
+        .hero p {
+            font-size: 12px;
+            color: #bbb;
+            margin-bottom: 14px;
+            line-height: 1.5
+        }
+
+        .loc {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 7px;
+            margin-bottom: 15px
+        }
+
+        .loc span {
+            border: 1px solid #d4a01755;
+            background: #161616;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 12px
+        }
+
+        .hero-actions {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap
+        }
+
+        .btn {
+            padding: 11px 14px;
+            border-radius: 10px;
+            font-weight: 700;
+            font-size: 13px;
+            display: inline-flex;
+            gap: 6px;
+            border: 1px solid #d4a017;
+            text-decoration: none
+        }
+
+        .btn-gold {
+            background: #d4a017;
+            color: #000
+        }
+
+        .btn-dark {
+            background: #111;
+            color: #fff
+        }
+
+        .sec {
+            text-align: center;
+            padding: 20px 10px 10px
+        }
+
+        .sec .sub {
+            color: #d4a017;
+            font-size: 11px;
+            letter-spacing: 2px;
+            text-transform: uppercase
+        }
+
+        .sec h2 {
+            font-size: 18px;
+            margin-top: 4px
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            padding: 10px
+        }
+
+        .card {
+            background: #121212;
+            border: 1px solid #333;
+            border-radius: 14px;
+            overflow: hidden
+        }
+
+        .card img {
+            width: 100%;
+            height: 115px;
+            object-fit: cover
+        }
+
+        .card-body {
+            padding: 10px;
+            text-align: center
+        }
+
+        .card-body h3 {
+            font-size: 14px
+        }
+
+        .card-body p {
+            font-size: 10px;
+            color: #999;
+            line-height: 1.3;
+            height: 34px;
+            margin: 4px 0
+        }
+
+        .price {
+            color: #d4a017;
+            font-weight: 800;
+            font-size: 16px
+        }
+
+        .price small {
+            font-size: 11px;
+            color: #ccc;
+            font-weight: 400
+        }
+
+        .quote {
+            color: #d4a017;
+            font-size: 11px;
+            font-weight: 600;
+            margin-top: 4px
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 5px;
+            padding: 12px;
+            background: #111;
+            border: 1px solid #333;
+            margin: 12px 10px;
+            border-radius: 12px;
+            padding: 12px 5px;
+            text-align: center
+        }
+
+        .stat {
+            font-size: 11px;
+            display: grid;
+            gap: 6px;
+            align-items: center
+        }
+
+        .stat b {
+            color: #d4a017;
+            font-size: 16px;
+            display: grid
+        }
+
+        .how {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 5px;
+            padding: 12px;
+            background: #0f0f0f;
+            border: 1px solid #333;
+            margin: 10px;
+            border-radius: 12px;
+            text-align: center
+        }
+
+        .how b {
+            display: block;
+            color: #fff;
+            font-size: 10px
+        }
+
+        .how div {
+            font-size: 9px;
+            color: #aaa
+        }
+
+        .footer-bar {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 6px;
+            padding: 8px;
+            background: #000;
+            border-top: 1px solid #333;
+            z-index: 100
+        }
+
+        .f-btn {
+            padding: 9px 5px;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 11px;
+            font-weight: 800;
+            line-height: 1.1;
+            text-decoration: none
+        }
+
+        .f-green {
+            background: #25D366;
+            color: #fff
+        }
+
+        .f-gold {
+            background: #d4a017;
+            color: #000
+        }
+
+        .f-dark {
+            background: #222;
+            color: #fff;
+            border: 1px solid #444
+        }
+
+        .booking-overlay {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.65);
+            backdrop-filter: blur(5px);
+
+            justify-content: center;
+            align-items: center;
+
+            z-index: 9999;
+        }
+
+        .booking-box {
+            position: relative;
+            width: 90%;
+            max-width: 450px;
+
+            background: #fff;
+            padding: 30px;
+            border-radius: 15px;
+
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+
+            animation: popup 0.25s ease;
+        }
+
+        @keyframes popup {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        .booking-box h2 {
+            margin: 0 0 8px;
+        }
+
+        .booking-box p {
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .booking-box input,
+        .booking-box select {
+            width: 100%;
+            box-sizing: border-box;
+
+            padding: 13px 15px;
+            margin-bottom: 12px;
+
+            border: 1px solid #ddd;
+            border-radius: 8px;
+
+            font-size: 15px;
+            outline: none;
+        }
+
+        .booking-box input:focus,
+        .booking-box select:focus {
+            border-color: #25D366;
+        }
+
+        .booking-actions {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .booking-actions button {
+            flex: 1;
+            padding: 13px;
+            border-radius: 8px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        .reset-btn {
+            width: 100%;
+            padding: 14px;
+
+            border: none;
+            border-radius: 8px;
+
+            background: #fafafa;
+            color: rgb(255, 255, 255);
+
+            font-size: 16px;
+            font-weight: 600;
+
+            cursor: pointer;
+        }
+
+        .reset-btn:hover {
+            background: #ddd;
+        }
+
+
+        .submit-btn {
+            width: 100%;
+            padding: 14px;
+
+            border: none;
+            border-radius: 8px;
+
+            background: #25D366;
+            color: white;
+
+            font-size: 16px;
+            font-weight: 600;
+
+            cursor: pointer;
+        }
+
+        .submit-btn:hover {
+            background: #1ebe5d;
+        }
+
+        .close-btn {
+            position: absolute;
+            right: 15px;
+            top: 10px;
+
+            border: none;
+            background: none;
+
+            font-size: 28px;
+            cursor: pointer;
+            color: #555;
+        }
+
+        /* MODAL BACKGROUND */
+
+        .service-modal {
+            display: none;
+
+            position: fixed;
+            inset: 0;
+
+            z-index: 9999;
+
+            background: rgba(0, 0, 0, 0.7);
+
+            backdrop-filter: blur(6px);
+
+            align-items: center;
+            justify-content: center;
+
+            padding: 20px;
+        }
+
+
+        /* MODAL BOX */
+
+        .service-modal-box {
+            position: relative;
+
+            width: 100%;
+            max-width: 850px;
+
+            max-height: 90vh;
+
+            overflow-y: auto;
+
+            background: white;
+
+            border-radius: 18px;
+
+            overflow: hidden;
+
+            display: grid;
+            grid-template-columns: 45% 55%;
+
+            animation: modalOpen 0.25s ease;
+        }
+
+        @keyframes modalOpen {
+
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+
+        }
+
+
+        /* MODAL IMAGE */
+
+        .service-modal-box>img {
+            width: 100%;
+            height: 100%;
+            min-height: 400px;
+
+            object-fit: cover;
+        }
+
+
+        /* MODAL CONTENT */
+
+        .modal-content {
+            padding: 40px;
+        }
+
+        .modal-content h2 {
+            font-size: 32px;
+            margin-top: 0;
+        }
+
+        .modal-content p {
+            color: #666;
+            line-height: 1.7;
+        }
+
+        .modal-content li {
+            margin-bottom: 10px;
+        }
+
+
+        /* CLOSE BUTTON */
+
+        .modal-close {
+            position: absolute;
+
+            top: 12px;
+            right: 12px;
+
+            width: 40px;
+            height: 40px;
+
+            border: none;
+            border-radius: 50%;
+
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+
+            font-size: 25px;
+
+            cursor: pointer;
+
+            z-index: 2;
+        }
+
+
+        /* BOOK BUTTON */
+
+        .modal-book-btn {
+            width: 100%;
+
+            padding: 14px;
+
+            margin-top: 20px;
+
+            border: none;
+            border-radius: 8px;
+
+            background: #25D366;
+            color: white;
+
+            font-size: 16px;
+            font-weight: 600;
+
+            cursor: pointer;
+        }
+
+        .modal-book-btn:hover {
+            background: #1ebe5d;
+        }
+
+
+        /* TABLET */
+
+        @media (max-width: 800px) {
+
+            .services {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .service-modal-box {
+                grid-template-columns: 1fr;
+                max-width: 500px;
+            }
+
+            .service-modal-box>img {
+                height: 250px;
+                min-height: 0;
+            }
+
+            .modal-content {
+                padding: 25px;
+            }
+
+        }
+
+
+        /* MOBILE */
+
+        @media (max-width: 500px) {
+
+            .services {
+                grid-template-columns: 1fr;
+            }
+
+            .service-modal {
+                padding: 12px;
+            }
+
+            .service-modal-box {
+                max-height: 95vh;
+                border-radius: 14px;
+            }
+
+            .service-modal-box>img {
+                height: 200px;
+            }
+
+            .modal-content {
+                padding: 20px;
+            }
+
+            .modal-content h2 {
+                font-size: 25px;
+            }
+
+        }
+
+        @media(min-width:768px) {
+            .services {
+                grid-template-columns: repeat(4, 1fr)
+            }
+
+            .hero h1 {
+                font-size: 42px
+            }
+
+            .hero {
+                padding: 50px 30px
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo"> <img src="pic.png"><span> MUQA
+                GLASS WORKS </span></div>
+        <a href="https://wa.me/916398493966" class="btn-wa"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+    </div>
+
+    <div class="hero">
+        <h1>Premium Glass &<br>Aluminium Work.<br><span class="gold">Perfect Finish.</span></h1>
+        <p>Shower Glass, Toughened Glass, Aluminium Works, Glass Film, LED Mirror, SS Railing, Skylight and Professional
+            Repair & Installation.</p>
+        <div class="loc">
+            <span>📍 Gurugram</span><span>📍 Delhi</span><span>📍 Faridabad</span><span>📍 Sohna</span><span>📍
+                Manesar</span>
+        </div>
+        <div class="hero-actions">
+            <a href="tel:+916398493966" class="btn btn-gold">📞 Call Now</a>
+            <a href="#1" class="btn btn-dark">📝 Get Quote</a>
+            <a class="btn btn-dark" onclick="openBooking()">📅 Site Visit ₹199</a>
+        </div>
+    </div>
+
+    <div class="sec" id="1">
+        <div class="sub">— OUR SERVICES —</div>
+        <h2>Every Work. Premium Finish.</h2>
+    </div>
+
+    <div class="services">
+        <div class="card" onclick="openService('shower glass')"><img
+                src="C:/Users/imran nazir/.gemini/antigravity-ide/scratch/Muqa Glass Works/assets/shower glass.png">
+            <div class="card-body">
+                <h3>Shower Glass</h3>
+                <p>Shower enclosure, doors & partitions.</p>
+                <div class="price">₹380 <small>Starting</small></div>
+                <a onclick="openBooking()">
+                    <div class="quote">Get Quote →</div>
+                </a>
+            </div>
+        </div>
+        <div class="card" onclick="openService('glass-door')"><img src="toughened glass.png">
+            <div class="card-body">
+                <h3>Toughened Glass</h3>
+                <p>Strong glass solutions for homes & offices.</p>
+                <div class="price">₹150 <small>Starting</small></div>
+                <a onclick="openBooking()">
+                    <div class="quote">Get Quote →</div>
+                </a>
+            </div>
+        </div>
+        <div class="card" onclick="openService('glass-door')"><img src="aluminium works.png">
+            <div class="card-body">
+                <h3>Aluminium Works</h3>
+                <p>Doors, windows, partitions & custom works.</p>
+                <div class="price">₹450 <small>Starting</small></div>
+                <a onclick="openBooking()">
+                    <div class="quote">Get Quote →</div>
+                </a>
+            </div>
+        </div>
+        <div class="card" onclick="openService('glass-door')"><img src="glass firm.png">
+            <div class="card-body">
+                <h3>Glass Film</h3>
+                <p>Privacy & decorative glass film installation.</p>
+                <div class="price">₹40 <small>Starting</small></div>
+                <a onclick="openBooking()">
+                    <div class="quote">Get Quote →</div>
+                </a>
+            </div>
+        </div>
+        <div class="card" onclick="openService('glass-door')"><img src="led mirrors.png">
+            <div class="card-body">
+                <h3>LED Mirror</h3>
+                <p>Stylish LED mirrors for your modern spaces.</p>
+                <div class="price">₹350 <small>Starting</small></div>
+                <a onclick="openBooking()">
+                    <div class="quote">Get Quote →</div>
+                </a>
+            </div>
+        </div>
+        <div class="card" onclick="openService('glass-door')"><img src="ss railing.png">
+            <div class="card-body">
+                <h3>SS Railing</h3>
+                <p>Stainless-steel railing installation & service.</p>
+                <div class="price">₹950 <small>Starting</small></div>
+                <a onclick="openBooking()">
+                    <div class="quote">Get Quote →</div>
+                </a>
+            </div>
+        </div>
+        <div class="card" onclick="openService('glass-door')"><img src="skylight.png">
+            <div class="card-body">
+                <h3>Skylight</h3>
+                <p>Premium skylight for natural light & ventilation.</p>
+                <div class="price">₹450 <small>Starting</small></div>
+                <a onclick="openBooking()">
+                    <div class="quote">Get Quote →</div>
+                </a>
+            </div>
+        </div>
+        <div class="card" onclick="openService('glass-door')"><img src="repair.png">
+            <div class="card-body">
+                <h3>Repair & Installation</h3>
+                <p>Expert repair & installation for all glass & aluminium works.</p>
+                <a onclick="openBooking()">
+                    <div class="quote" style="margin-top:18px">Get Quote →</div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="service-modal" id="serviceModal">
+
+        <div class="service-modal-box">
+
+            <button class="modal-close" onclick="closeService()">
+                &times;
+            </button>
+
+            <img id="modalImage" src="" alt="">
+
+            <div class="modal-content">
+
+                <h2 id="modalTitle"></h2>
+
+                <p id="modalDescription"></p>
+
+                <h4>Features</h4>
+
+                <ul id="modalFeatures"></ul>
+
+                <button class="modal-book-btn" onclick="bookService()">
+                    Book This Service
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="stats">
+        <div class="stat"> <span><b>👥 5000+</b> Happy Customers</span></div>
+        <div class="stat"> <span><b>🛡️ 100%</b> Quality Work</span></div>
+        <div class="stat"> <span><b>🕒 24x7</b> Service</span></div>
+        <div class="stat"> <span><b>🏆 5+ Years</b> Experience</span></div>
+    </div>
+
+    <div class="sec">
+        <div class="sub">HOW IT WORKS</div>
+    </div>
+    <div class="how">
+        <div><br><b>☰ Choose Service</b><br>Select the service you need</div>
+        <div><br><b>📏 We Measure & Survey</b><br>Our expert will visit your site</div>
+        <div><br><b>📄 Exact Quote</b><br>You will get exact fixed quote</div>
+        <div><br><b>✅ Work Starts</b><br>Work starts after advance paid</div>
+    </div>
+
+    <div class="footer-bar">
+        <a href="https://wa.me/916398493966" class="f-btn f-green"><i class="fab fa-whatsapp"></i> WhatsApp<br>+91 63984
+            93966</a>
+        <a href="tel:+916398493966" class="f-btn f-gold"><i class="fas fa-phone-alt"></i> Call Now<br>+91 63984
+            93966</a>
+        <a class="f-btn f-dark" onclick="openBooking()"> Site
+            Visit ₹199<br><small style="font-weight:400;font-size:9px">Adjusted in final bill</small></a>
+    </div>
+
+    <div class="booking-overlay" id="bookingPopup">
+        <div class="booking-box">
+
+            <button class="close-btn" onclick="closeBooking()">&times;</button>
+
+            <h2>Book Our Service</h2>
+            <p>Fill in your details and we'll contact you on WhatsApp.</p>
+
+            <form id="bookingForm">
+
+                <input type="text" id="name" placeholder="Your Name" required>
+
+                <input type="tel" id="whatsapp" placeholder="10-digit WhatsApp Number" maxlength="10"
+                    pattern="[0-9]{10}" inputmode="numeric" required>
+
+                <!-- Location Selection -->
+                <select id="location" required>
+                    <option value="">Select Location</option>
+                    <option value="Gurugram">Gurugram</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Sohna">Sohna</option>
+                    <option value="Faridabad">Faridabad</option>
+                    <option value="Manesar">Manesar</option>
+                    <option value="Other">Other</option>
+                </select>
+
+                <!-- Service Selection -->
+                <select id="service" required>
+                    <option value="">Select Service</option>
+                    <option value="Glass Firm">Glass Firm</option>
+                    <option value="Shower Glass">Shower Glass</option>
+                    <option value="SS Railing">SS Railing</option>
+                    <option value="Toughened Glass">Toughened Glass</option>
+                    <option value="Skylight">Skylight</option>
+                    <option value="Aluminium Works">Aluminium Works</option>
+                    <option value="LED mirrors">LED mirrors</option>
+                    <option value="Glass Railing">Glass Railing</option>
+                    <option value="Repair & Installation">Repair & Installation</option>
+                    <option value="Other">Other</option>
+                </select>
+                <div class="booking-actions">
+                    <button type="submit" class="submit-btn">
+                        Book Now
+                    </button>
+
+                    <button type="button" class="reset-btn" id="clearBooking" onclick="resetBooking()">
+                        Clear
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+
+        const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyM2skLXHTvKK6rND-5149FyKDLksjXPbCcw4dT3OVrHL7TcFkOwjuVmYrmXNNq4wobqA/exec";
+
+        const services = {
+
+            "shower glass": {
+                title: "Shower glass",
+                image: "C:/Users/imran nazir/.gemini/antigravity-ide/scratch/Muqa Glass Works/assets/shower glass.png",
+                description:
+                    "We provide premium glass door solutions designed for homes, offices and commercial spaces.",
+
+                features: [
+                    "Toughened safety glass",
+                    "Frameless and framed options",
+                    "Custom sizes available",
+                    "Modern hardware options",
+                    "Professional installation"
+                ]
+            },
+
+
+            "glass-railing": {
+                title: "Glass Railing",
+                image: "images/glass-railing.jpg",
+                description:
+                    "Modern glass railing systems that provide safety while maintaining an open and elegant appearance.",
+
+                features: [
+                    "Toughened glass",
+                    "Balcony and staircase solutions",
+                    "Stainless steel hardware",
+                    "Custom measurements",
+                    "Professional installation"
+                ]
+            },
+
+
+            "glass-partition": {
+                title: "Glass Partition",
+                image: "images/glass-partition.jpg",
+                description:
+                    "Create bright and modern workspaces with custom glass partition solutions.",
+
+                features: [
+                    "Office partitions",
+                    "Clear and frosted glass",
+                    "Framed and frameless designs",
+                    "Custom sizes",
+                    "Professional installation"
+                ]
+            }
+
+        };
+
+
+        let selectedService = "";
+
+
+        function openService(serviceId) {
+
+            const service = services[serviceId];
+
+            if (!service) return;
+
+            selectedService = serviceId;
+
+            document.getElementById("modalImage").src = service.image;
+            document.getElementById("modalImage").alt = service.title;
+
+            document.getElementById("modalTitle").textContent =
+                service.title;
+
+            document.getElementById("modalDescription").textContent =
+                service.description;
+
+
+            const featureList =
+                document.getElementById("modalFeatures");
+
+            featureList.innerHTML = "";
+
+            service.features.forEach(function (feature) {
+
+                const li = document.createElement("li");
+
+                li.textContent = feature;
+
+                featureList.appendChild(li);
+
+            });
+
+
+            document.getElementById("serviceModal").style.display = "flex";
+
+            document.body.style.overflow = "hidden";
+        }
+        function closeService() {
+
+            document.getElementById("serviceModal").style.display = "none";
+
+            document.body.style.overflow = "";
+        }
+        function bookService() {
+
+            // Close service details
+            closeService();
+
+            // Open your existing booking popup
+            openBooking();
+
+            // Automatically select the service
+            const serviceSelect =
+                document.getElementById("service");
+
+            const service = services[selectedService];
+
+            if (service) {
+
+                for (let option of serviceSelect.options) {
+
+                    if (option.value === service.title) {
+
+                        serviceSelect.value = service.title;
+                        break;
+
+                    }
+
+                }
+
+            }
+
+        }
+        document.getElementById("serviceModal").addEventListener("click", function (e) {
+
+            if (e.target === this) {
+                closeService();
+            }
+
+        });
+        document.addEventListener("keydown", function (e) {
+
+            if (e.key === "Escape") {
+                closeService();
+            }
+
+        });
+        // Clear / Reset booking
+        function resetBooking() {
+            document.getElementById("bookingForm").reset();
+        }
+
+        function openBooking() {
+            document.getElementById("bookingPopup").style.display = "flex";
+        }
+
+        function closeBooking() {
+            document.getElementById("bookingPopup").style.display = "none";
+        }
+
+        // WhatsApp number: numbers only
+        document.getElementById("whatsapp").addEventListener("input", function () {
+            this.value = this.value.replace(/\D/g, "").slice(0, 10);
+        });
+
+        // CLIENT-SIDE CLEAR
+        document.getElementById("clearBooking").addEventListener("click", function () {
+
+            // Clears all current/live form values
+            form.reset();
+
+            // Make sure keyword/search text is also cleared
+            keywordsInput.value = "";
+
+            // Put cursor back into name field
+            nameInput.focus();
+        });
+
+
+        // Submit booking
+        document.getElementById("bookingForm").addEventListener("submit", async function (e) {
+
+            e.preventDefault();
+
+            const name = document.getElementById("name").value.trim();
+            const whatsapp = document.getElementById("whatsapp").value.trim();
+            const location = document.getElementById("location").value;
+            const service = document.getElementById("service").value;
+
+
+            // Validate 10 digit number
+            if (!/^[0-9]{10}$/.test(whatsapp)) {
+                alert("Please enter a valid 10-digit WhatsApp number.");
+                return;
+            }
+
+
+            // Booking data
+            const bookingData = {
+                name: name,
+                whatsapp: whatsapp,
+                location: location,
+                service: service
+            };
+
+
+            const bookButton = document.querySelector(".submit-btn");
+
+            bookButton.disabled = true;
+            bookButton.innerText = "Booking...";
+
+
+            try {
+
+                // Send data to Google Sheet
+                await fetch(GOOGLE_SCRIPT_URL, {
+                    method: "POST",
+                    mode: "no-cors",
+                    headers: {
+                        "Content-Type": "text/plain;charset=utf-8"
+                    },
+                    body: JSON.stringify(bookingData)
+                });
+
+
+                // WhatsApp message
+                const message = `
+                    Hello Muqa Glass Works,
+
+                    I would like to book your service.
+
+                    Name: ${name}
+                    WhatsApp: +91 ${whatsapp}
+                    Location: ${location}
+                    Service: ${service}
+
+                    Please contact me regarding my booking.
+                        `;
+
+                const whatsappURL =
+                    `https://wa.me/916398493966?text=${encodeURIComponent(message)}`;
+
+
+                // Open WhatsApp
+                window.open(whatsappURL, "_blank");
+
+
+                // Clear form after booking
+                document.getElementById("bookingForm").reset();
+
+
+            } catch (error) {
+
+                console.error(error);
+
+                alert("Something went wrong. Please try again.");
+
+            } finally {
+
+                bookButton.disabled = false;
+                bookButton.innerText = "Book Now";
+
+            }
+
+        });
+
+    </script>
+</body>
+
+</html>
