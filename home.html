@@ -64,7 +64,7 @@
         .logo span {
             color: #d4a017;
             display: block;
-            font-size: 26px;
+            font-size: 25px;
             font-weight: 800;
             letter-spacing: 1px
         }
@@ -245,8 +245,8 @@
 
         .stat b {
             color: #d4a017;
-            font-size: 16px;
-            display: grid
+            font-size: 12px;
+            display: block
         }
 
         .how {
@@ -691,9 +691,8 @@
     </div>
 
     <div class="services">
-        <div class="card" onclick="openService('shower glass')"><img
-                src="C:/Users/imran nazir/.gemini/antigravity-ide/scratch/Muqa Glass Works/assets/shower glass.png">
-            <div class="card-body">
+        <div class="card" onclick="openService('shower-glass')"><img src="shower glass.png">
+            <div class="card-body" >
                 <h3>Shower Glass</h3>
                 <p>Shower enclosure, doors & partitions.</p>
                 <div class="price">₹380 <small>Starting</small></div>
@@ -702,7 +701,7 @@
                 </a>
             </div>
         </div>
-        <div class="card" onclick="openService('glass-door')"><img src="toughened glass.png">
+        <div class="card" onclick="openService('toughened-glass')"><img src="toughened glass.png">
             <div class="card-body">
                 <h3>Toughened Glass</h3>
                 <p>Strong glass solutions for homes & offices.</p>
@@ -712,7 +711,7 @@
                 </a>
             </div>
         </div>
-        <div class="card" onclick="openService('glass-door')"><img src="aluminium works.png">
+        <div class="card" onclick="openService('aluminium-works')"><img src="aluminium works.png">
             <div class="card-body">
                 <h3>Aluminium Works</h3>
                 <p>Doors, windows, partitions & custom works.</p>
@@ -722,7 +721,7 @@
                 </a>
             </div>
         </div>
-        <div class="card" onclick="openService('glass-door')"><img src="glass firm.png">
+        <div class="card" onclick="openService('glass-film')"><img src="glass film.png">
             <div class="card-body">
                 <h3>Glass Film</h3>
                 <p>Privacy & decorative glass film installation.</p>
@@ -732,7 +731,7 @@
                 </a>
             </div>
         </div>
-        <div class="card" onclick="openService('glass-door')"><img src="led mirrors.png">
+        <div class="card" onclick="openService('led-mirrors')"><img src="led mirrors.png">
             <div class="card-body">
                 <h3>LED Mirror</h3>
                 <p>Stylish LED mirrors for your modern spaces.</p>
@@ -742,7 +741,7 @@
                 </a>
             </div>
         </div>
-        <div class="card" onclick="openService('glass-door')"><img src="ss railing.png">
+        <div class="card" onclick="openService('ss-railing')"><img src="ss railing.png">
             <div class="card-body">
                 <h3>SS Railing</h3>
                 <p>Stainless-steel railing installation & service.</p>
@@ -752,7 +751,7 @@
                 </a>
             </div>
         </div>
-        <div class="card" onclick="openService('glass-door')"><img src="skylight.png">
+        <div class="card" onclick="openService('skylight')"><img src="skylight.png">
             <div class="card-body">
                 <h3>Skylight</h3>
                 <p>Premium skylight for natural light & ventilation.</p>
@@ -762,7 +761,7 @@
                 </a>
             </div>
         </div>
-        <div class="card" onclick="openService('glass-door')"><img src="repair.png">
+        <div class="card" onclick="openService('repair')"><img src="repair.png">
             <div class="card-body">
                 <h3>Repair & Installation</h3>
                 <p>Expert repair & installation for all glass & aluminium works.</p>
@@ -821,10 +820,8 @@
     </div>
 
     <div class="footer-bar">
-        <a href="https://wa.me/916398493966" class="f-btn f-green"><i class="fab fa-whatsapp"></i> WhatsApp<br>+91 63984
-            93966</a>
-        <a href="tel:+916398493966" class="f-btn f-gold"><i class="fas fa-phone-alt"></i> Call Now<br>+91 63984
-            93966</a>
+        <a href="https://wa.me/916398493966" class="f-btn f-green"><i class="fab fa-whatsapp"></i> WhatsApp<br>+91 63984 93966</a>
+        <a href="tel:+916398493966" class="f-btn f-gold"><i class="fas fa-phone-alt"></i> Call Now<br>+91 63984 93966</a>
         <a class="f-btn f-dark" onclick="openBooking()"> Site
             Visit ₹199<br><small style="font-weight:400;font-size:9px">Adjusted in final bill</small></a>
     </div>
@@ -887,55 +884,147 @@
 
         const services = {
 
-            "shower glass": {
+            "shower-glass": {
                 title: "Shower glass",
-                image: "C:/Users/imran nazir/.gemini/antigravity-ide/scratch/Muqa Glass Works/assets/shower glass.png",
+                image: "shower glass.png",
                 description:
-                    "We provide premium glass door solutions designed for homes, offices and commercial spaces.",
+                    "Create a clean, spacious, and modern bathroom with custom shower glass solutions. Our shower enclosures are designed to provide an elegant appearance while making efficient use of your bathroom space.",
 
                 features: [
                     "Toughened safety glass",
-                    "Frameless and framed options",
-                    "Custom sizes available",
-                    "Modern hardware options",
+                    "Frameless and framed designs",
+                    "Shower enclosures and partitions",
+                    "Custom measurements",
+                    "Premium hardware options",
+                    "Clear, frosted, and patterned glass options",
                     "Professional installation"
                 ]
             },
 
 
-            "glass-railing": {
-                title: "Glass Railing",
-                image: "images/glass-railing.jpg",
+            "toughened-glass": {
+                title: "Toughened Glass",
+                image: "toughened glass.png",
                 description:
-                    "Modern glass railing systems that provide safety while maintaining an open and elegant appearance.",
+                    "Toughened glass provides a strong and modern glazing solution for residential and commercial applications. It can be customized for doors, windows, partitions, railings, shower enclosures, and other projects.",
 
                 features: [
-                    "Toughened glass",
-                    "Balcony and staircase solutions",
-                    "Stainless steel hardware",
+                    "Safety-focused glass solution",
+                    "Available in different thicknesses",
+                    "Clear, tinted, frosted, and decorative options",
+                    "Suitable for doors and windows",
+                    "Glass partitions and railings",
+                    "Custom sizes and shapes",
+                    "Professional fabrication and installation"
+                ]
+            },
+
+
+            "led-mirrors": {
+                title: "LED Mirror",
+                image: "led mirrors.png",
+                description:
+                    "Add a modern and luxurious touch to your bathroom, bedroom, dressing area, or commercial space with custom LED mirrors. Designed for both functionality and aesthetics.",
+
+                features: [
+                    "Modern LED illumination",
+                    "Custom sizes and shapes",
+                    "Backlit and front-lit options",
+                    "Touch or sensor controls",
+                    "Anti-fog options available",
+                    "Custom frame and finish options",
+                    "Professional installation"
+                ]
+            },
+
+        "ss-railing": {
+                title: "SS railing",
+                image: "ss railing.png",
+                description:
+                    "Give your staircase, balcony, or terrace a contemporary appearance with stainless-steel railing solutions. Our SS railings combine durability, safety, and modern design.",
+
+                features: [
+                    "Stainless-steel construction",
+                    "Glass and non-glass railing options",
+                    "Balcony and staircase applications",
+                    "Modern and custom designs",
+                    "Corrosion-resistant finishes",
                     "Custom measurements",
                     "Professional installation"
                 ]
             },
 
 
-            "glass-partition": {
-                title: "Glass Partition",
-                image: "images/glass-partition.jpg",
+            "skylight": {
+                title: "Skylight",
+                image: "skylight.png",
                 description:
-                    "Create bright and modern workspaces with custom glass partition solutions.",
+                    "Bring more natural light into your interior spaces with custom skylight solutions. Our skylights are designed to enhance the appearance of a space while making better use of available daylight.",
 
                 features: [
-                    "Office partitions",
-                    "Clear and frosted glass",
-                    "Framed and frameless designs",
-                    "Custom sizes",
-                    "Professional installation"
+                    "Custom-designed skylights",
+                    "Natural daylight enhancement",
+                    "Glass and aluminium solutions",
+                    "Residential and commercial applications",
+                    "Modern architectural designs",
+                    "Weather-resistant installation solutions",
+                    "Professional measurement and installation"
+                ]
+            },
+
+
+            "glass-film": {
+                title: "Glass Film",
+                image: "glass film.png",
+                description:
+                    "Transform ordinary glass with high-quality decorative, privacy, and solar-control films. Glass films are an excellent way to improve privacy and appearance without replacing your existing glass.",
+
+                features: [
+                    "Privacy and frosted films
+                    "Decorative designs",
+                    "Solar-control films",
+                    "Custom patterns and finishes",
+                    "Helps reduce glare and sunlight",
+                    "Suitable for homes, offices, and commercial spaces",
+                    "Professional application"
+                ]
+            },
+
+        "aluminium-works": {
+                title: "Aluminium Works",
+                image: "aluminium works.png",
+                description:
+                    "Enhance your home or commercial space with durable and stylish aluminium solutions. We provide custom aluminium work designed to suit your space, requirements, and preferred finish.",
+
+                features: [
+                    "Custom-made aluminium frames and structures",
+                    "Aluminium doors and windows",
+                    "Sliding and folding systems",
+                    "Durable and low-maintenance materials",
+                    "Modern designs and finishes",
+                    "Professional measurement and installation"
+                ]
+            },
+
+
+            "repair": {
+                title: "Repair & Installtion",
+                image: "repair.png",
+                description:
+                    "Keep your glass, aluminium, and related installations in excellent condition with professional repair and installation services. We handle new installations, replacements, adjustments, and repair requirements.",
+
+                features: [
+                    "Professional workmanship",
+                    "Custom solutions",
+                    "Quality materials",
+                    "Careful measurement",
+                    "Reliable installation",
+                    "Residential and commercial services"
                 ]
             }
 
         };
-
+        
 
         let selectedService = "";
 
@@ -1028,6 +1117,7 @@
             }
 
         });
+
         // Clear / Reset booking
         function resetBooking() {
             document.getElementById("bookingForm").reset();
