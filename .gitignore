@@ -1,7 +1,7 @@
 
 # Supabase
 SUPABASE_URL=https://fagbijmxsbkeqoyneuec.supabase.co
-SUPABASE_SECRET_KEY=sb_secret_tnKH7PYB_sDYEDjlYjaiNg_N2DOe0OE
+SUPABASE_SECRET_KEY=API_KEY
 # Legacy fallback is supported temporarily if you only have the old key:
 # SUPABASE_SERVICE_ROLE_KEY=eyJhbGciOi...
 SUPABASE_STORAGE_BUCKET=site-images
